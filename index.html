@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/14702870d8.js" crossorigin="anonymous"></script>
+    <!-- FIM FONT AWESOME -->
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
+
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body>
+    
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/hamb-1.png" alt=""
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">VERDAZZO Burger</h1>
+
+            <span class="text-white font-medium">Rua Palestra Itália, 1951, Barra Funda</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-2" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 18:00 - 22:00</span>
+            </div>
+        </div>
+
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center my-9">
+        Conheça os nossos produtos
+    </h2>
+
+    <div id="menu"><!--MENU-->
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-17">
+
+            <div class="flex gap-2"><!--PRIMEIRO ITEM-->
+
+                <img src="./assets/hamb-1.png" alt="Hamburger Smash"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+
+                <div><!--DESCRIÇÃO-->
+
+                    <p class="font-bold">Hamburger Smash</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt erat dui, nec imper</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$18,90</p>
+
+                        <button class="bg-gray-900 px-5 rounded-full hover:scale-110 duration-200  add-to-cart-btn"
+                                data-name="Hamburger Smash"
+                                data-price="18.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div><!--FIM DESCRIÇÃO-->
+
+            </div><!--FIM PRIMEIRO ITEM-->
+
+            <div class="flex gap-2"><!--SEGUNDO ITEM-->
+
+                <img src="./assets/hamb-2.png" alt="Hamburger Duplo"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"><!--IMAGEM-->
+                
+                <div><!--DESCRIÇÃO-->
+
+                    <p class="font-bold">Hamburger Duplo</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt erat dui, nec imper</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$22,90</p>
+
+                        <button class="bg-gray-900 px-5 rounded-full hover:scale-110 duration-200  add-to-cart-btn"
+                                data-name="Hamburger Duplo"
+                                data-price="22.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div><!--FIM DESCRIÇÃO-->
+
+            </div><!--FIM SEGUNDO ITEM-->
+
+            <div class="flex gap-2"><!--TERCEIRO ITEM-->
+
+                <img src="./assets/hamb-3.png" alt="Hamburger Salad"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                
+                <div><!--DESCRIÇÃO-->
+
+                    <p class="font-bold">Hamburger Salad</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt erat dui, nec imper</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$26,90</p>
+
+                        <button class="bg-gray-900 px-5 rounded-full hover:scale-110 duration-200  add-to-cart-btn"
+                                data-name="Hamburger Salad"
+                                data-price="26.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div><!--FIM DESCRIÇÃO-->
+
+            </div><!--FIM TERCEIRO ITEM-->
+
+            <div class="flex gap-2"><!--QUARTO ITEM-->
+
+                <img src="./assets/hamb-4.png" alt="Hamburger da Casa"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                
+                <div><!--DESCRIÇÃO-->
+
+                    <p class="font-bold">Hamburger da Casa</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt erat dui, nec imper</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$23,90</p>
+
+                        <button class="bg-gray-900 px-5 rounded-full hover:scale-110 duration-200 add-to-cart-btn"
+                                data-name="Hamburger da Casa"
+                                data-price="23.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div><!--FIM DESCRIÇÃO-->
+
+            </div><!--FIM QUARTO ITEM-->
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-9">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+
+        </div>
+
+        <div class="grid grid-cols-1 mb-20 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-17" id="menu"><!--BEBIDAS-->
+
+            <div class="flex gap-2 w-full"><!--COCA-COLA ITEM-->
+
+                <img src="./assets/refri-1.png" alt="Coca Lata"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                
+                <div class="w-full"><!--DESCRIÇÃO-->
+
+                    <p class="font-bold">Coca Lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$5,50</p>
+
+                        <button class="bg-gray-900 px-5 rounded-full hover:scale-110 duration-200  add-to-cart-btn"
+                                data-name="Coca Lata"
+                                data-price="5.50">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div><!--FIM DESCRIÇÃO-->
+
+            </div><!--FIM COCA-COLA ITEM-->
+
+            <div class="flex gap-2 w-full"><!--GUARANÁ ITEM-->
+
+                <img src="./assets/refri-2.png" alt="Guarana Lata"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                
+                <div class="w-full"><!--DESCRIÇÃO-->
+
+                    <p class="font-bold">Guaraná Lata</p>
+                    <!-- <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt erat dui, nec imper</p> -->
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$5,50</p>
+
+                        <button class="bg-gray-900 px-5 rounded-full hover:scale-110 duration-200  add-to-cart-btn"
+                                data-name="Guarana Lata"
+                                data-price="5.50">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div><!--FIM DESCRIÇÃO-->
+
+            </div><!--FIM GUARANÁ ITEM-->
+
+        </div><!--FIM BEBIDAS-->
+
+    </div><!--FIM MENU-->
+
+    <div class="bg-black/70 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal"><!--MODAL CART-->
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input type="text"
+                    placeholder="Digite seu endereço:"
+                    id="address"
+                    class="w-full border-2 p-1 rounded my-1">
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+
+        </div>
+
+    </div><!--FIM MODAL CART-->
+
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+
+        </button>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>
